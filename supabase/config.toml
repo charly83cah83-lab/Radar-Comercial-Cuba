@@ -1,0 +1,17 @@
+project_id = "radar-santa-fe-smart-market"
+
+[api]
+enabled = true
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+major_version = 15
+
+[auth]
+enabled = true
+site_url = "https://charly83cah83-lab.github.io/Radar-SantaFe-Smart-Marketing-"
+additional_redirect_urls = [
+  "https://charly83cah83-lab.github.io/Radar-SantaFe-Smart-Marketing-/**"
+]
