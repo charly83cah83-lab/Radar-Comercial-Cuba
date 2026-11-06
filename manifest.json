@@ -1,0 +1,12 @@
+{
+  "name": "Radar Santa Fe — Smart Market",
+  "short_name": "Radar Santa Fe",
+  "description": "Registro y comparación de precios de MIPYMES en Santa Fe y Guanabacoa.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#091329",
+  "theme_color": "#101a3a",
+  "icons": []
+}
