@@ -1,12 +1,12 @@
 {
-  "name": "Radar Santa Fe — Smart Market",
-  "short_name": "Radar Santa Fe",
-  "description": "Registro y comparación de precios de MIPYMES en Santa Fe y Guanabacoa.",
+  "name": "Radar Comercial Cuba",
+  "short_name": "Radar Cuba",
+  "description": "Inteligencia de precios, productos y MIPYMES para Cuba.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#091329",
-  "theme_color": "#101a3a",
+  "background_color": "#081329",
+  "theme_color": "#101b3b",
   "icons": []
 }
