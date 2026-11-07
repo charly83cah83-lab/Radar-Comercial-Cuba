@@ -51,7 +51,7 @@ $('featured').innerHTML=db.products.slice(0,4).map(card).join('')||'<div class="
 let q=($('productSearch')?.value||'').toLowerCase(),cat=$('categoryFilter')?.value||'',cur=$('currencyFilter')?.value||'';
 let list=db.products.filter(p=>(!q||(p.name+' '+p.seller+' '+p.group+' '+p.notes).toLowerCase().includes(q))&&(!cat||p.category===cat)&&(!cur||(cur==='Sin confirmar'?p.currency==='Sin confirmar':p.currency===cur)));
 $('productGrid').innerHTML=list.map(card).join('')||'<div class="empty">No hay coincidencias.</div>';
-$('sourceRows').innerHTML=db.groups.map(g=>'<tr><td><b>'+esc(g.name)+'</b></td><td><span class="tag">Importado</span></td><td>'+g.messages+' mensajes · '+g.mediaOmitted+' multimedia omitidos</td><td>'+esc(g.notes||'')}</td></tr>').join('');
+$('sourceRows').innerHTML=db.groups.map(g=>'<tr><td><b>'+esc(g.name)+'</b></td><td><span class="tag">Importado</span></td><td>'+g.messages+' mensajes · '+g.mediaOmitted+' multimedia omitidos</td><td>'+esc(g.notes||'')+'</td></tr>').join('');
 $('groupList').innerHTML=db.groups.map(g=>'<p>• <b>'+esc(g.name)+'</b> — '+(g.messages||0)+' mensajes procesados</p>').join('');
 $('businessRows').innerHTML=db.groups.map(g=>'<tr><td>'+esc(g.name)+'</td><td>'+esc(g.zone||'No confirmada')+'</td><td>'+db.products.filter(p=>p.group===g.name).length+'</td><td>No publicar números personales sin consentimiento</td><td><span class="old tag">Pendiente de verificar</span></td></tr>').join('')||'<tr><td colspan="5" class="empty">Sin negocios identificados.</td></tr>';
 $('offerRows').innerHTML=db.offers.map(o=>'<tr><td>'+esc(o.date)+'</td><td>'+esc(o.group)+'</td><td>'+esc(o.text)+'</td><td><span class="old tag">'+esc(o.status)+'</span></td></tr>').join('')||'<tr><td colspan="4" class="empty">No hay avisos.</td></tr>';
