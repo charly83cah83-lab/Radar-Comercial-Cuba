@@ -7,7 +7,38 @@
 :root{color-scheme:dark;--bg:#081329;--panel:#111f3d;--panel2:#17294d;--line:#2b3d65;--text:#f4f7ff;--muted:#aab8d5;--cyan:#59dfdc;--blue:#7991ff;--green:#72e6b0;--amber:#ffcf7b;--red:#ff8b9c}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#263d79 0,transparent 36%),var(--bg);color:var(--text);font:15px system-ui,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:11px;padding:10px 14px;font-weight:750;background:linear-gradient(110deg,var(--cyan),#9aebc9);color:#07152b}.secondary{background:#20345e;color:white;border:1px solid var(--line)}.danger{background:#512a40;color:#ffe2e8}.app{max-width:1500px;margin:auto;display:grid;grid-template-columns:240px 1fr;min-height:100vh}aside{padding:20px 14px;background:#09152e;border-right:1px solid var(--line);position:sticky;top:0;height:100vh}.brand{font-weight:950;letter-spacing:.04em;margin:5px 8px 22px;font-size:17px}.brand small{display:block;color:var(--cyan);font-size:10px;letter-spacing:.2em;margin-top:3px}.nav{display:grid;gap:5px}.nav button{background:transparent;color:var(--muted);text-align:left;font-size:13px}.nav button.active,.nav button:hover{background:#20365f;color:white}.side-note{position:absolute;bottom:16px;left:14px;right:14px;color:var(--muted);font-size:11px;border:1px solid var(--line);padding:12px;border-radius:12px;line-height:1.5}main{padding:26px clamp(13px,3vw,38px)}header{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:20px;flex-wrap:wrap}.eyebrow{color:var(--cyan);font-size:10px;letter-spacing:.2em;font-weight:850}h1{font-size:clamp(25px,3vw,36px);margin:4px 0}header p,.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:6px 10px;color:var(--muted);font-size:11px}.view{display:none}.view.active{display:block}.grid{display:grid;gap:13px}.stats{grid-template-columns:repeat(4,1fr)}.card{background:linear-gradient(145deg,#172849,#101d38);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0}.label{font-size:12px;color:var(--muted)}.value{font-size:28px;font-weight:900;margin-top:6px}.hero{margin:14px 0;background:linear-gradient(110deg,#203b78,#3a3477);border:1px solid #485c99;padding:22px;border-radius:18px}.hero h2{margin:7px 0;font-size:25px}.hero p{color:#d7e0ff;max-width:780px}.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:grid;gap:5px}.field label{font-size:12px;color:var(--muted);font-weight:700}.field input,.field select,.field textarea,.search{width:100%;padding:11px;border-radius:10px;border:1px solid var(--line);background:#09152d;color:white;min-width:0}.field textarea{min-height:72px}.wide{grid-column:1/-1}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.section{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:20px 0 10px;flex-wrap:wrap}h2{font-size:18px;margin:0}.table{overflow:auto}table{width:100%;border-collapse:collapse;min-width:680px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-size:10px;text-transform:uppercase}td{font-size:13px}.tag{font-size:10px;border-radius:20px;padding:4px 8px;background:#15443e;color:#9affd8;display:inline-block}.old{background:#4a3b28;color:#ffdc9b}.warn{background:#4a2b3a;color:#ffc0cf}.price{color:#85f2c6;font-weight:850}.small{padding:6px 9px;font-size:11px;background:#20365f;color:white;border:1px solid var(--line);margin:2px}.empty{text-align:center;padding:24px;color:var(--muted)}.notice{background:#103440;border:1px solid #31616c;color:#c0fff1;padding:11px;border-radius:11px;font-size:12px;margin:10px 0;line-height:1.5}.toast{display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#e8fff8;color:#06251f;padding:12px 18px;border-radius:12px;z-index:9;font-weight:800;max-width:90vw}.product-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}.product-card{overflow:hidden}.photo{height:135px;background:#0a1731;border:1px dashed #3a527d;border-radius:11px;display:flex;align-items:center;justify-content:center;color:#8da2cc;font-size:12px;margin-bottom:10px;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}.product-card h3{margin:4px 0 7px;font-size:16px}.product-meta{color:var(--muted);font-size:11px;line-height:1.55}.product-price{font-size:22px;font-weight:900;color:var(--green);margin:8px 0}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.toolbar>*{flex:1;min-width:135px}
 @media(max-width:850px){.app{display:block}aside{height:auto;position:sticky;z-index:4;padding:8px;border-right:0;border-bottom:1px solid var(--line)}.brand{margin:2px 7px 7px}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap;font-size:12px;padding:9px}.side-note{display:none}main{padding:16px 11px}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.form{grid-template-columns:1fr}.wide{grid-column:auto}.value{font-size:24px}.card{padding:12px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.photo{height:105px}.product-price{font-size:18px}}
-</style></head><body><div class="app"><aside><div class="brand">◈ RADAR COMERCIAL CUBA<small>INTELIGENCIA DE MERCADO</small></div><nav class="nav" id="nav">
+
+.auth-overlay{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:18px;background:radial-gradient(ellipse at 80% 0,#263d79 0,transparent 42%),#071126;overflow:auto}
+.auth-box{width:min(100%,440px);background:linear-gradient(145deg,#172849,#101d38);border:1px solid #405580;border-radius:20px;padding:24px;box-shadow:0 24px 80px #0009}
+.auth-box h2{font-size:23px;margin:8px 0}.auth-box p{color:var(--muted);line-height:1.5;font-size:13px}
+.auth-box .field{margin:12px 0}.auth-box .field input{padding:13px}
+.auth-tabs{display:flex;gap:8px;margin:16px 0}.auth-tabs button{flex:1}
+.auth-error{display:none;background:#512a40;color:#ffe2e8;border:1px solid #8b4560;border-radius:10px;padding:10px;font-size:12px;margin:10px 0}
+.auth-success{display:none;background:#103c35;color:#c0fff1;border:1px solid #316b61;border-radius:10px;padding:10px;font-size:12px;margin:10px 0}
+.auth-user{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.auth-user small{color:var(--muted);max-width:180px;overflow:hidden;text-overflow:ellipsis}
+body.auth-locked .app{display:none}
+@media(max-width:520px){.auth-box{padding:18px}.auth-user small{max-width:120px}}
+</style></head><body>
+<div class="auth-overlay" id="authOverlay">
+ <div class="auth-box">
+  <div class="eyebrow">◈ RADAR COMERCIAL CUBA</div>
+  <h2 id="authTitle">Accede a tu Radar</h2>
+  <p id="authDescription">Inicia sesión para entrar a tu espacio comercial seguro. Tus datos estarán protegidos por tu cuenta.</p>
+  <div class="auth-tabs" id="authTabs"><button id="showLogin">Iniciar sesión</button><button class="secondary" id="showSignup">Crear cuenta</button></div>
+  <form id="authForm">
+   <div class="field" id="nameField" style="display:none"><label>Nombre</label><input id="authName" autocomplete="name" maxlength="80" placeholder="Tu nombre"></div>
+   <div class="field"><label>Correo electrónico</label><input id="authEmail" type="email" required autocomplete="email" placeholder="tu correo"></div>
+   <div class="field" id="passwordField"><label>Contraseña</label><input id="authPassword" type="password" minlength="8" required autocomplete="current-password" placeholder="Mínimo 8 caracteres"></div>
+   <div class="field" id="confirmField" style="display:none"><label>Repite la contraseña</label><input id="authConfirm" type="password" minlength="8" autocomplete="new-password" placeholder="Confirma tu contraseña"></div>
+   <div class="field" id="newPasswordField" style="display:none"><label>Nueva contraseña</label><input id="authNewPassword" type="password" minlength="8" autocomplete="new-password" placeholder="Mínimo 8 caracteres"></div>
+   <button id="authSubmit" type="submit" style="width:100%;margin-top:5px">Entrar</button>
+  </form>
+  <button class="secondary" id="forgotButton" style="width:100%;margin-top:9px">Olvidé mi contraseña</button>
+  <div class="auth-error" id="authError" role="alert"></div><div class="auth-success" id="authSuccess" role="status"></div>
+  <p style="font-size:11px;margin-top:16px">La contraseña se verifica mediante Supabase Auth. Nunca compartas tu contraseña ni códigos de confirmación.</p>
+ </div>
+</div><div class="app"><aside><div class="brand">◈ RADAR COMERCIAL CUBA<small>INTELIGENCIA DE MERCADO</small></div><nav class="nav" id="nav">
 <button class="active" data-v="home">⌂ Inicio</button><button data-v="products">▦ Productos</button><button data-v="businesses">⌖ Negocios</button><button data-v="tools">☷ Herramientas</button></nav><div class="side-note">● PRIMERA BASE DE DATOS<br>2 grupos procesados<br>Los precios históricos no se consideran vigentes hasta confirmarlos con el vendedor.<br><br>Versión inicial · modo local</div></aside>
 <main><header><div><div class="eyebrow">INTELIGENCIA COMERCIAL PARA CUBA</div><h1 id="title">Panel de mercado</h1><p id="subtitle">Cuba · cobertura inicial en Guanabacoa y zonas cercanas</p></div><div class="actions"><span class="pill">● Catálogo inicial cargado</span><button onclick="go('imports')">＋ Añadir grupo</button></div></header>
 <section class="view active" id="v-home"><div class="grid stats"><div class="card"><div class="label">Productos / anuncios</div><div class="value" id="sProducts">0</div></div><div class="card"><div class="label">Negocios / fuentes</div><div class="value" id="sBusinesses">0</div></div><div class="card"><div class="label">Grupos incorporados</div><div class="value" id="sGroups">0</div></div><div class="card"><div class="label">Precios por verificar</div><div class="value" id="sPending">0</div></div></div>
@@ -23,6 +54,7 @@
 <section class="view" id="v-imports"><div class="card"><h2>Incorporar un nuevo grupo de WhatsApp</h2><p class="muted">Exporta el chat desde WhatsApp como archivo de texto (.txt) y cárgalo aquí. El sistema registra el grupo, fecha, remitente y contenido del mensaje. Los archivos de fotos deben adjuntarse por separado si WhatsApp los omitió en la exportación.</p><div class="form" style="margin-top:12px"><div class="field"><label>Nombre del grupo</label><input id="groupName" placeholder="Nombre exacto del grupo"></div><div class="field"><label>Zona de cobertura (si se conoce)</label><input id="groupZone" placeholder="Ej. Guanabacoa; no inferir"></div><div class="field wide"><label>Exportación de WhatsApp (.txt)</label><input id="chatFile" type="file" accept=".txt,text/plain"></div></div><div class="actions" style="margin-top:12px"><button onclick="importChat()">Analizar e incorporar</button><button class="secondary" onclick="document.getElementById('chatFile').value=''">Limpiar selección</button></div><div id="importResult" class="notice">Los grupos nuevos se añadirán a las fuentes existentes, sin borrar los anteriores.</div></div><div class="card" style="margin-top:13px"><h2>Grupos ya incorporados</h2><div id="groupList"></div></div></section>
 <section class="view" id="v-admin"><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))"><div class="card"><h2>Exportar base local</h2><p class="muted">Descarga grupos, publicaciones, productos y fotografías cargadas en esta sesión del navegador.</p><button onclick="backup()">Descargar copia JSON</button></div><div class="card"><h2>Importar copia</h2><input id="backupFile" type="file" accept=".json,application/json"><button class="secondary" style="margin-top:10px" onclick="restore()">Restaurar JSON</button></div><div class="card"><h2>Agregar fotografía</h2><p class="muted">Asocia una foto a un anuncio ya existente. Las imágenes se guardan en este dispositivo mientras no esté conectado el almacenamiento en la nube.</p><select id="photoProduct" class="search"></select><input id="photoFile" type="file" accept="image/*" style="margin:10px 0"><button class="secondary" onclick="addPhoto()">Guardar fotografía</button></div></div><div class="card" style="margin-top:13px"><h2>Estado técnico</h2><p class="muted">Interfaz y catálogo inicial en modo local. La conexión a Supabase, autenticación multiusuario y almacenamiento compartido se activarán al disponer del proyecto Radar Comercial Cuba correcto.</p><div class="notice">No se usa ninguna clave secreta en el navegador. No se conecta a otro proyecto Supabase ni se modifica Cuba Plus Pay o Kiosco Control Pro.</div><button class="danger" onclick="clearLocal()">Borrar datos locales de esta aplicación</button></div></section>
 <section class="view" id="v-tools"><div class="section"><div><h2>Herramientas del Radar</h2><p class="muted">Las funciones complementarias están agrupadas aquí para mantener la navegación sencilla.</p></div></div><div class="grid product-grid"><div class="card"><h2>Comparar precios</h2><p class="muted">Buscar precios publicados sin mezclar monedas o presentaciones distintas.</p><button onclick='go("compare")'>Abrir comparador</button></div><div class="card"><h2>Ofertas y disponibilidad</h2><p class="muted">Consultar avisos históricos de ofertas, reservas y productos agotados.</p><button onclick='go("offers")'>Ver avisos</button></div><div class="card"><h2>Calculadora</h2><p class="muted">Convertir kilogramos a libras y calcular precio por libra.</p><button onclick='go("calculator")'>Abrir calculadora</button></div><div class="card"><h2>Importar grupos</h2><p class="muted">Añadir nuevas exportaciones de WhatsApp en formato TXT.</p><button onclick='go("imports")'>Añadir grupo</button></div><div class="card"><h2>Administración y copias</h2><p class="muted">Agregar fotografías, exportar o restaurar los datos locales.</p><button onclick='go("admin")'>Administrar datos</button></div></div><div class="notice">La navegación principal queda reducida a cuatro botones. Estas funciones siguen disponibles dentro de Herramientas.</div></section><footer class="muted" style="text-align:center;font-size:11px;margin:26px 0">RADAR COMERCIAL CUBA · Tu mercado, más claro · Los precios históricos no son cotizaciones vigentes.</footer></main></div><div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const KEY='radar_comercial_cuba_v1';
 const seedGroups=[
@@ -64,4 +96,90 @@ function backup(){let a=document.createElement('a'),u=URL.createObjectURL(new Bl
 function addPhoto(){let id=$('photoProduct').value,f=$('photoFile').files[0];if(!id||!f)return toast('Selecciona producto y fotografía');if(f.size>1500000)return toast('La foto supera 1.5 MB; reduce su tamaño antes de cargarla');let r=new FileReader();r.onload=()=>{let p=db.products.find(x=>x.id===id);if(p){p.photo=r.result;save();toast('Fotografía asociada al producto')}};r.readAsDataURL(f)}
 function clearLocal(){if(confirm('¿Borrar todos los datos guardados en este navegador?')){localStorage.removeItem(KEY);db=fresh();save();toast('Datos locales reiniciados')}}
 render();
+
+</script>
+<script>
+/* Radar Comercial Cuba — Supabase Auth */
+(function(){
+ const SUPABASE_URL='https://pwxkisakhqdwbcmvzptr.supabase.co';
+ const SUPABASE_PUBLISHABLE_KEY='sb_publishable_3FWPVymD65E9g93xFkHZLA_qqrZzDU4';
+ const redirectUrl=window.location.origin+window.location.pathname;
+ const client=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+ window.radarSupabase=client;
+ const overlay=document.getElementById('authOverlay'), form=document.getElementById('authForm');
+ const title=document.getElementById('authTitle'), desc=document.getElementById('authDescription');
+ const tabs=document.getElementById('authTabs'), nameField=document.getElementById('nameField');
+ const passField=document.getElementById('passwordField'), confirmField=document.getElementById('confirmField'), newPassField=document.getElementById('newPasswordField');
+ const submit=document.getElementById('authSubmit'), forgot=document.getElementById('forgotButton');
+ const err=document.getElementById('authError'), ok=document.getElementById('authSuccess');
+ let mode='login', recovering=false;
+ function message(e,s){err.style.display=e?'block':'none';err.textContent=e||'';ok.style.display=s?'block':'none';ok.textContent=s||''}
+ function setMode(m){
+  mode=m;message('','');
+  tabs.style.display=(m==='login'||m==='signup')?'flex':'none';
+  nameField.style.display=m==='signup'?'grid':'none';
+  passField.style.display=m==='forgot'?'none':(m==='newpass'?'none':'grid');
+  confirmField.style.display=m==='signup'?'grid':'none';
+  newPassField.style.display=m==='newpass'?'grid':'none';
+  forgot.style.display=m==='login'?'block':'none';
+  title.textContent=m==='login'?'Accede a tu Radar':m==='signup'?'Crear cuenta':m==='forgot'?'Recuperar contraseña':'Crear nueva contraseña';
+  desc.textContent=m==='login'?'Inicia sesión para entrar a tu espacio comercial seguro.':m==='signup'?'Regístrate con tu correo. Te enviaremos un mensaje para confirmar la cuenta.':m==='forgot'?'Te enviaremos un enlace seguro para restablecer tu contraseña.':'Escribe una contraseña nueva para recuperar el acceso.';
+  submit.textContent=m==='login'?'Entrar':m==='signup'?'Crear cuenta':m==='forgot'?'Enviar enlace':'Guardar contraseña';
+  document.getElementById('authPassword').required=(m==='login'||m==='signup');
+  document.getElementById('authConfirm').required=m==='signup';
+  document.getElementById('authNewPassword').required=m==='newpass';
+ }
+ document.getElementById('showLogin').onclick=()=>setMode('login');
+ document.getElementById('showSignup').onclick=()=>setMode('signup');
+ forgot.onclick=()=>setMode('forgot');
+ form.addEventListener('submit',async e=>{
+  e.preventDefault();message('','');submit.disabled=true;
+  try{
+   const email=document.getElementById('authEmail').value.trim();
+   if(mode==='login'){
+    const {error}=await client.auth.signInWithPassword({email,password:document.getElementById('authPassword').value});
+    if(error)throw error;
+   }else if(mode==='signup'){
+    const password=document.getElementById('authPassword').value;
+    if(password!==document.getElementById('authConfirm').value)throw new Error('Las contraseñas no coinciden.');
+    if(password.length<8)throw new Error('La contraseña debe tener al menos 8 caracteres.');
+    const {data,error}=await client.auth.signUp({email,password,options:{emailRedirectTo:redirectUrl,data:{display_name:document.getElementById('authName').value.trim()}}});
+    if(error)throw error;
+    if(!data.session)message('', 'Cuenta creada. Revisa tu correo y confirma el registro antes de iniciar sesión.');
+   }else if(mode==='forgot'){
+    const {error}=await client.auth.resetPasswordForEmail(email,{redirectTo:redirectUrl+'?auth=recovery'});
+    if(error)throw error;
+    message('', 'Si el correo está registrado, recibirás un enlace para restablecer la contraseña.');
+   }else if(mode==='newpass'){
+    const password=document.getElementById('authNewPassword').value;
+    if(password.length<8)throw new Error('La contraseña debe tener al menos 8 caracteres.');
+    const {error}=await client.auth.updateUser({password});
+    if(error)throw error;
+    recovering=false;message('', 'Contraseña actualizada correctamente.');
+    setTimeout(()=>{overlay.style.display='none';document.body.classList.remove('auth-locked')},900);
+   }
+  }catch(error){message(error.message||'No se pudo completar la operación. Inténtalo de nuevo.','')}
+  finally{submit.disabled=false}
+ });
+ function showSignedIn(user){
+  overlay.style.display='none';document.body.classList.remove('auth-locked');
+  let holder=document.getElementById('radarAuthUser');
+  if(!holder){holder=document.createElement('div');holder.id='radarAuthUser';holder.className='auth-user';document.querySelector('header .actions').prepend(holder)}
+  holder.innerHTML='<small>'+String(user.email||'Cuenta activa').replace(/[&<>"]/g,'')+'</small><button class="secondary" id="radarLogout" type="button">Salir</button>';
+  document.getElementById('radarLogout').onclick=async()=>{await client.auth.signOut();document.body.classList.add('auth-locked');overlay.style.display='flex';setMode('login')};
+ }
+ function showSignedOut(){document.body.classList.add('auth-locked');overlay.style.display='flex';setMode('login')}
+ client.auth.onAuthStateChange((event,session)=>{
+  if(event==='PASSWORD_RECOVERY'){recovering=true;overlay.style.display='flex';document.body.classList.add('auth-locked');setMode('newpass');return}
+  if(session?.user){showSignedIn(session.user)}
+  else{showSignedOut()}
+ });
+ client.auth.getSession().then(({data,error})=>{
+  if(error||!data.session)showSignedOut();else showSignedIn(data.session.user);
+ });
+ if(new URLSearchParams(location.search).get('auth')==='recovery'){
+  overlay.style.display='flex';document.body.classList.add('auth-locked');
+ }
+ setMode('login');
+})();
 </script></body></html>
